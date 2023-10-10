@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.lisners.patient"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 24
+        versionName "1.0.24"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+            // Add this line to enable Crashlytics in release builds
+            firebaseCrashlytics {
+                mappingFileUploadEnabled true
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        buildConfig = true  // Determines whether to generate a BuildConfig class.
+        viewBinding = true
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    /* Android Architecture Component - LiveData & ViewModel  */
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    /* Dagger2 - We are going to use dagger.android which includes
+        * support for Activity and fragment injection so we need to include
+        * the following dependencies */
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    implementation 'com.google.dagger:dagger-android-support:2.22'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.17'
+    /* Dagger2 - default dependency */
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.40.5'
+
+    //FIREBASE
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ndk'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    // for internet connectivity management
+    implementation 'com.novoda:merlin:1.2.0'
+
+
+    //implementation 'com.google.android:flexbox:1.1.1'
+    implementation 'com.github.florent37:shapeofview:1.3.2'
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    implementation 'com.squareup:otto:1.3.6'
+    //compileOnly 'com.google.android.wearable:wearable:2.6.0'
+
+    // API
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.code.gson:gson:2.9.1'
+
+    // razorpay sdk
+    implementation 'com.razorpay:checkout:1.5.12'
+
+    implementation 'com.github.agorabuilder:native-full-sdk:3.5.0'
+    implementation 'io.agora.rtm:rtm-sdk:1.2.2'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.github.MrBin99:LaravelEchoAndroid:1.04'
+
+    implementation 'com.google.android:flexbox:2.0.1'
+
+    implementation 'com.google.firebase:firebase-crashlytics:18.4.0'
+
+    implementation 'com.google.dagger:hilt-android:2.40.5'
+    kapt 'com.google.dagger:hilt-compiler:2.40.5'
+
+    implementation('io.socket:socket.io-client:2.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+}
+
+
+
+

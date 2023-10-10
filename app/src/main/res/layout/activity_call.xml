@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border_semi_round_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lisners.patient.Activity.Home.calls.CallActivity">
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_40"
+        android:padding="@dimen/size_10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:paddingRight="@dimen/size_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_medium"
+              android:includeFontPadding="false"
+              android:text="Ellianor Rodrigues"
+              android:textColor="@color/primary"
+              android:textSize="@dimen/size_18" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:includeFontPadding="false"
+              android:text="Mental health , Career,
+Marriage and relationship"
+              android:textColor="@color/black"
+              android:textSize="@dimen/size_18" />
+
+
+      </LinearLayout>
+        <ImageView
+            android:src="@drawable/profile"
+            android:layout_width="@dimen/size_100"
+            android:layout_height="@dimen/size_100"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_timer"
+            android:text="05.00"
+            android:layout_gravity="center_horizontal"
+             android:paddingVertical="@dimen/size_4"
+             android:paddingHorizontal="@dimen/size_10"
+            android:background="@drawable/border_semi_round_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+         android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/size_40"
+        android:layout_height="@dimen/size_100">
+        <View
+         android:background="@drawable/ic_video_call"
+         android:layout_width="@dimen/size_50"
+         android:layout_height="@dimen/size_50"/>
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="@drawable/ic_svg_audio"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"/>
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/btn_call_close"
+            android:background="@drawable/ic_svg_phone_call"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

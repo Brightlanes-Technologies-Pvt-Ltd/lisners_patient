@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/background">
+        <shape>
+            <solid android:color="@color/primary" />
+            <corners
+                android:bottomLeftRadius="15dp"
+                android:bottomRightRadius="15dp" />
+        </shape>
+    </item>
+
+    <item
+        android:gravity="right"
+        android:drawable="@drawable/ic_svg_ellipse"
+        android:right="-40dp"
+        android:top="-125dp"
+        android:bottom="90dp"/>
+
+</layer-list>

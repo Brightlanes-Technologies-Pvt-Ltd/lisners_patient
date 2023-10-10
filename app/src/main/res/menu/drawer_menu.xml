@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_svg_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_appointments"
+            android:icon="@drawable/ic_svg_appointments"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_svg_heart"
+            android:title="Favorite Therapists" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_svg_wallet"
+            android:title="Wallet" />
+        
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_svg_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_svg_setting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_helpy"
+            android:icon="@drawable/menu_helpy"
+            android:title="@string/helpy" />
+        <item
+            android:id="@+id/nav_voice_analysis"
+            android:icon="@drawable/menu_voice_analysis"
+            android:title="@string/my_voice_analysis" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_svg_logout"
+            android:title="Logout" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_svg_faq"
+                android:title="Faq" />
+            <item
+                android:id="@+id/nav_term_condition"
+                android:icon="@drawable/ic_svg_terms_con"
+                android:title="Terms &amp; Conditions" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_svg_privacy_policy"
+                android:title="Contact" />
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_svg_privacy_policy"
+                android:title="About us" />
+        </menu>
+    </item>
+</menu>

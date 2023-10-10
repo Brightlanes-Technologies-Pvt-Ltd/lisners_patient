@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166173775750",
+    "project_id": "lisners-patient",
+    "storage_bucket": "lisners-patient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166173775750:android:f2faf658b97c49c9d1be07",
+        "android_client_info": {
+          "package_name": "com.lisners.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166173775750-lvjrfhkugm4scd8rv8rbi6fgl4e0eeup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1CPP0RZ4y-3cJHNALpNoAUIpjc8cdQPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166173775750-lvjrfhkugm4scd8rv8rbi6fgl4e0eeup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

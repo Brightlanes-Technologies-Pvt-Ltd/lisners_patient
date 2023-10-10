@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.lisners.patient.Activity.Home.ProfileStack.EditProfileFragment">
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/round_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_pic_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_header"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/size_10">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30"
+                android:layout_marginBottom="@dimen/size_20">
+
+                <TextView
+                    android:id="@+id/tv_short_name"
+                    android:layout_width="@dimen/size_120"
+                    android:layout_height="@dimen/size_120"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_50"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/size_120"
+                    android:layout_height="@dimen/size_120"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/border_round"
+                    android:padding="@dimen/size_5"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+
+                <FrameLayout
+                    android:id="@+id/fl_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_90"
+                    android:layout_marginTop="@dimen/size_90"
+                    android:background="@drawable/border_circle_primary_background"
+                    android:gravity="center"
+                    android:padding="@dimen/size_10">
+
+                    <ImageView
+                        android:id="@+id/iv_edit_icon"
+                        android:layout_width="@dimen/size_18"
+                        android:layout_height="@dimen/size_18"
+                        android:src="@drawable/ic_svg_pencil"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_30"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_20"
+                tools:ignore="SpUsage" />
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginHorizontal="@dimen/size_10"-->
+            <!--            android:layout_marginBottom="@dimen/size_20"-->
+            <!--            android:orientation="horizontal">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:fontFamily="@font/poppins_regular"-->
+            <!--                android:includeFontPadding="false"-->
+            <!--                android:text="Full Name"-->
+            <!--                android:textSize="@dimen/size_12"-->
+            <!--                tools:ignore="SpUsage" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:fontFamily="@font/poppins_regular"-->
+            <!--                android:gravity="end"-->
+            <!--                android:includeFontPadding="false"-->
+            <!--                android:text="Parsley Montana"-->
+            <!--                android:textSize="@dimen/size_12"-->
+            <!--                tools:ignore="SpUsage" />-->
+
+            <!--        </LinearLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Full Name"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginHorizontal="@dimen/size_10"-->
+            <!--            android:layout_marginVertical="@dimen/size_20"-->
+            <!--            android:orientation="horizontal">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:fontFamily="@font/poppins_regular"-->
+            <!--                android:includeFontPadding="false"-->
+            <!--                android:text="Email Address"-->
+            <!--                android:textSize="@dimen/size_12"-->
+            <!--                tools:ignore="SpUsage" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:fontFamily="@font/poppins_regular"-->
+            <!--                android:gravity="end"-->
+            <!--                android:includeFontPadding="false"-->
+            <!--                android:text="parsleymontana@gmail.com"-->
+            <!--                android:textSize="@dimen/size_12"-->
+            <!--                tools:ignore="SpUsage" />-->
+            <!--        </LinearLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Email Address"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <include layout="@layout/single_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10"
+                android:layout_marginVertical="@dimen/size_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:text="Gender" />
+                <EditText
+                    android:id="@+id/ed_gender"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:includeFontPadding="false"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdGenderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:checked="false"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rdGenderFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/size_15"
+                        android:buttonTint="@color/primary"
+                        android:checked="false"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/rdGenderOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:checked="false"
+                        android:text="Other" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/single_line" />
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/size_10"
+                android:layout_marginVertical="@dimen/size_30"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingVertical="@dimen/size_10"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14" />
+
+
+
+            <TextView
+                android:id="@+id/version"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_180"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/size_160"
+        android:layout_height="@dimen/size_160"
+        android:background="@drawable/tiles_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_problem"
+            android:layout_width="@dimen/size_90"
+            android:layout_height="@dimen/size_90"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTileName"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/size_15"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_10"
+        tools:ignore="SpUsage" />
+
+</LinearLayout>

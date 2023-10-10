@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:padding="@dimen/size_5">
+    <TextView
+        android:id="@+id/tv_month"
+        android:text="May"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+       android:text="12"
+        android:textSize="@dimen/size_14"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/border_circle_transparent"
+        android:layout_margin="@dimen/size_5"
+        android:includeFontPadding="false"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"/>
+    <TextView
+        android:id="@+id/tv_day"
+        android:text="Mon"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>

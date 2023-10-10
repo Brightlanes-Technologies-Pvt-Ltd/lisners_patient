@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.lisners.patient.Activity.Home.HomeStack.SettingsFragment">
+
+    <include layout="@layout/round_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_15">
+
+        <LinearLayout
+            android:id="@+id/lv_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_15"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Change Password"
+                android:textColor="@color/textGrey"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_15"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="Change Password"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_12"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+
+        <include layout="@layout/single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_15"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Notifications"
+                android:textColor="@color/textGrey"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+            <ProgressBar
+                android:id="@+id/pb_noti_loader"
+                android:visibility="gone"
+                android:layout_width="@dimen/size_25"
+                android:layout_height="@dimen/size_25"/>
+            <include layout="@layout/switch_button_layout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
